@@ -6,7 +6,7 @@ const App = () => {
 
   const[count,setcount]=useState(0)
   return (
-    <div style={{display:"flex"}}>
+    <div >
         Button clicked {count} times
         <div>
         <button onClick={()=>setcount(count+1)}>Click me</button>
