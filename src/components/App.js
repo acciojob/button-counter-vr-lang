@@ -8,8 +8,11 @@ const App = () => {
   return (
     <div style={{display:"flex"}}>
         Button clicked {count} times
-
+        <div>
         <button onClick={()=>setcount(count+1)}>Click me</button>
+
+        </div>
+
     </div>
   )
 }
