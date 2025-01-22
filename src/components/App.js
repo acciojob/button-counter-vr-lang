@@ -1,20 +1,20 @@
-
 import React, { useState } from "react";
-import './../styles/App.css';
 
-const App = () => {
+function App() {
+  // Initialize counter state to 0
+  const [count, setCount] = useState(0);
 
-  const[count,setcount]=useState(0)
+  // Increment counter state
+  const App = () => {
+    setCount(count + 1);
+  };
+
   return (
-    <div >
-        Button clicked {count} times
-        <div>
-        <button onClick={()=>setcount(count+1)}>Click me</button>
-
-        </div>
-
+    <div>
+      <p>Button clicked {count} times.</p>
+      <button onClick={App}>Click Me</button>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
